@@ -6,16 +6,15 @@ box-sizing: border-box;
 
 body {
     font-family: 'Merriweather Sans', sans-serif;
-    line-height: 1.6;
-    color: #333333;
-    background: linear-gradient(#fafafa, #afaeae);
-    /* background-color: #7e5ad3; */
+    color: #444444;
+    /* background: linear-gradient(#fafafa, #afaeae); */
+    background-color: #afaeae;
 }
 
 p {
-    font-size: 1em;
-
+    font-size: 0.95em;
 }
+
 h1,
 h2,
 h3,
@@ -23,7 +22,21 @@ h3,
 .back-to-top {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    line-height: 1.5;
     color: #111111
+}
+
+h1,
+h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 20px 0 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 25px 0 15px;
 }
 
 a {
@@ -43,8 +56,8 @@ img {
 
 .name {
     text-align: center;
-    font-size: 1,5em;
-    margin: 0;
+    font-size: 1.5em;
+    margin: 5px 5px;
 }
 
 .main-nav {
@@ -52,12 +65,13 @@ img {
 }
 
 .main-nav a {
- text-align: center;
- display: block;
- padding: 5px 0;
- margin: 5px 0;
- background-color: white;
- }
+    text-align: center;
+    display: block;
+    padding: 5px 0;
+    margin: 5px 0;
+    background-color: white;
+}
+
 
 .main-nav a,
 .back-to-top {
@@ -83,24 +97,24 @@ img {
 .skills-list ul {
     padding: 0;
     text-align: center;
-  }
-  
+}
+ 
 .skills-list li {
-    border-radius: 4px;
+    border-radius: 3px;
+    font-size: 14px;
     display: inline-block;
     background: #36BF98;
     color: white;
     padding: 15px 10px;
-  }
+}
   
 .skills-list li:nth-child(odd) {
     background: #5AC4B0;
-  }
+}
 
 footer {
     border-top: 1px solid #dfe2e6;
     margin: 30px 15px 35px;
-    
     }
 
 .name-footer {
@@ -121,7 +135,7 @@ footer {
 .back-to-top {
     text-align: right;
     float: right;
-
+    margin: 30px 0;
 }
 
 /* ---- Layout Containers ---- */
@@ -143,8 +157,7 @@ footer {
 	color: #111;
 	padding: 2em 1em;
     margin-bottom: 1em;
-       
-    /* background: #FAFAFA; */
+    background: #FAFAFA;
 }
 
 #portfolio {
@@ -168,8 +181,83 @@ footer {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {}
+@media (min-width: 768px) {
 
+    /* .container {
+		width: 90%;
+		margin: 0 auto;
+    } */
+
+    .name,
+    .main-nav {
+        text-align: center;
+        margin: 0 15px 0;
+    }
+
+    .name a {
+        display: inline-block;
+        font-size: .95em;
+        color: #333333;
+        text-transform: none;
+        background-color:transparent;
+        margin-top: 15px;
+    }
+
+    .main-nav a {
+        display: inline-block;
+        font-size: .95em;
+        color: #333333;
+        text-transform: uppercase;
+        background-color:transparent;
+        /* margin-top: 5px; */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .main-nav a:hover {
+        color: #dd3870;
+    }
+
+    .welcome p {
+        margin: 0 15px;
+        text-align: left;
+    }
+    .profile-img {
+        float: right;
+        margin: 0 0 0 15px;
+    }
+
+    #portfolio {
+        text-align: center;
+    } 
+
+    .project {
+        float: left; 
+        width: 45%;
+        margin: 0 10px 0 15px;
+    }
+    
+    .back-to-top {
+        display: none;
+    }
+
+    .footer-nav {
+        display: block;
+        float: right; 
+        margin: 35px 10px;
+    }
+
+    .footer-nav a {
+        color: #333333;
+        font-size: .95em;
+        text-transform: uppercase; 
+        margin-left: 10px ;
+}
+
+
+
+
+@media (min-width: 1025px) {}
 
 /* ---- Float clearfix ---- */
 
