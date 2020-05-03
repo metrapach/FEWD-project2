@@ -90,8 +90,9 @@ img {
 }
 
 
-#portfolio li {
+.project {
     margin: 15px 15px 25px;
+    list-style-position: inside;
 }
 
 .skills-list ul {
@@ -163,7 +164,8 @@ footer {
 #portfolio {
     background-color: white;
     padding-right: 1em;
-	padding-left: 1em;
+    padding-left: 1em;
+ 
 }
 
 #skills {
@@ -232,9 +234,11 @@ footer {
     } 
 
     .project {
-        float: left; 
-        width: 45%;
-        margin: 0 10px 0 15px;
+        display: inline-block;
+        padding: 0;
+        width: 46%;
+        margin: 0 1%;
+        vertical-align: top;
     }
     
     .back-to-top {
@@ -257,7 +261,13 @@ footer {
 
 
 
-@media (min-width: 1025px) {}
+@media (min-width: 1024px) {
+
+.project {
+width: 30%;
+}
+
+}
 
 /* ---- Float clearfix ---- */
 
