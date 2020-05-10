@@ -40,6 +40,12 @@ h3 {
 
 a {
     text-decoration: none;
+    color: #333333;
+}
+
+a:hover,
+.main-nav a:hover,
+.footer-nav a:hover{
     color: #02BEA1;
 }
 
@@ -69,27 +75,54 @@ img {
     background-color: white;
 }
 
-
 .main-nav a,
 .back-to-top {
 	font-size: 1em;
-	color: #333333;
 	text-transform: uppercase;
 }
 
-.main-nav a:hover {
-	color: #02BEA1;
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
+.profile-img {
+    max-width: 200px;
+    margin: 0 15px;
+}
+
+#portfolio,
+#skills,
+#contact,
+.welcome {
+    text-align: center;
+}
+
+.welcome,
+#contact {
+	color: #111;
+	padding: 2em 1em;
+    margin-bottom: 1em;
+}
 
 #portfolio {
     padding: 30px 10px;
+    background-color: white;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 
 .project {
     margin: 15px 15px 25px;
     list-style-position: inside;
+}
+
+#skills {
+    background-color: #EEEDEB;
+    padding: 0.5em;
+    border: 2px solid white;
 }
 
 .skills-list ul {
@@ -110,6 +143,11 @@ img {
     background: #5AC4B0;
 }
 
+#contact {
+    background-color: #EEEDEB;
+    padding: 1em;
+}
+
 footer {
     border-top: 1px solid #dfe2e6;
     margin: 30px 15px 35px;
@@ -118,11 +156,13 @@ footer {
 .name-footer {
     text-align: left;
     float: left;
+    text-transform: none;
+
 }
 
 .name-footer a,
-.back-to-top a, {
-    color: white
+.back-to-top a {
+    color: #111111;
 }
 
 .footer-nav {
@@ -135,45 +175,7 @@ footer {
     margin: 30px 0;
 }
 
-/* ---- Layout Containers ---- */
 
-.main-header {
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-
-#portfolio,
-#skills,
-#contact,
-.welcome {
-    text-align: center;
-}
-
-.welcome,
-#contact {
-	color: #111;
-	padding: 2em 1em;
-    margin-bottom: 1em;
-    /* background: #FAFAFA; */
-}
-
-#portfolio {
-    background-color: white;
-    padding-right: 1em;
-    padding-left: 1em;
- 
-}
-
-#skills {
-    background-color: #EEEDEB;
-    padding: 0.5em;
-    border: 2px solid white;
-}
-
-#contact {
-    background-color: #EEEDEB;
-    padding: 1em;
-}
 
 /* ================================= 
   Media Queries
@@ -210,18 +212,16 @@ footer {
         margin-right: 20px;
         margin-left: 20px;
     }
-    
-    .main-nav a:hover {
-        color: #dd3870;
-    }
 
     .welcome p {
         margin: 0 15px;
         text-align: left;
+        font-size: 21px;
     }
+
     .profile-img {
         float: right;
-        margin: 0 0 0 15px;
+        max-width: 287px;
     }
 
     #portfolio {
@@ -241,6 +241,7 @@ footer {
     }
 
     .footer-nav {
+        font-weight: 800;
         display: block;
         float: right; 
         margin: 35px 10px;
@@ -254,33 +255,34 @@ footer {
 }
 
 
-
-
 @media (min-width: 1024px) {
 
-.container {
-	width: 94%;
-	margin: 10px auto;
-}
+    .container {
+        width: 94%;
+        margin: 10px auto;
+    }
 
-.name {
-    float: left;
-    padding: 0;
-}
+    .name {
+        float: left;
+        padding: 15px;
+    }
 
-.main-nav {
-    float: right;
-    margin: 20px 15px 0;
-}
+    .main-nav {
+        float: right;
+        margin: 20px 15px 0;
+    }
 
-.main-nav a {
-    display: inline-block;
-    margin-left: 15px;
-}
+    .main-nav a {
+        display: inline-block;
+        margin-left: 15px;
+    }
 
-.project {
-width: 30%;
-}
+    .profile-img {
+        max-width: 100%;
+        }
+    .project {
+    width: 30%;
+    }
 
 }
 
@@ -290,4 +292,5 @@ width: 30%;
     content: " ";
     display: table;
     clear: both;
+}
 }
