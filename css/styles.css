@@ -151,13 +151,13 @@ footer {
     margin: 30px 15px 35px;
 }
 
-.name-footer {
+.footer-name {
     text-align: left;
     float: left;
     text-transform: none;
 }
 
-.name-footer a,
+.footer-name a,
 .back-to-top a {
     color: #111111;
 }
@@ -228,6 +228,9 @@ footer {
         display: none;
     }
 
+    footer {
+        margin: 0 35px;
+    }
     .footer-nav {
         font-weight: 800;
         display: block;
@@ -246,9 +249,9 @@ footer {
 
 @media (min-width: 1024px) {
 
-    .container {
-        width: 94%;
-        margin: 10px auto;
+.page-container {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .name {
