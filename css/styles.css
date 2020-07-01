@@ -188,7 +188,6 @@ footer {
         display: inline-block;
         font-size: .95em;
         color: #333333;
-        /* text-transform: none; */
         background-color:transparent;
         margin-top: 15px;
     }
@@ -198,7 +197,7 @@ footer {
         font-size: .95em;
         background-color:transparent;
         padding: 17px;
-        margin: 0, 2px;
+        margin: 0 2px;
     }
 
     .welcome p {
